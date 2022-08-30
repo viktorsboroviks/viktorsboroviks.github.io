@@ -6,8 +6,8 @@ Articles:
 
 Contacts:
 
-* [email](vboroviks@inbox.lv)
-* [git](https://github.com/viktorsboroviks/)
+* <vboroviks@inbox.lv>
+* <https://github.com/viktorsboroviks>
 
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
