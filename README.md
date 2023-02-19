@@ -2,7 +2,7 @@
 
 Articles:
 
-* [Example Latex article](./example_latex_article.pdf)
+* [How losses outweight gains: study of a simple price oscillation case](./article_how_losses_outweight_gains.pdf)
 
 Projects:
 
