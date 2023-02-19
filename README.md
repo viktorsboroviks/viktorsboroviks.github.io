@@ -8,6 +8,7 @@ Projects:
 
 * [pav: Dinamically render PlantUML as you work on it in any text editor](https://github.com/viktorsboroviks/pav)
 * [vc: From command line open Vim as new tabs in the same Vim window](https://github.com/viktorsboroviks/vc)
+* ['Latvian - International' key layout for Mac that actually matches the physical keyboard](https://github.com/viktorsboroviks/mac-keylayout-lv-international)
 
 Contacts:
 
