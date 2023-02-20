@@ -64,6 +64,7 @@ clean:
 	if [ -d "$(TOOLS_PATH)" ]; then \
 		$(TOOLS_PATH)/native/clean_latex.sh -v . ;\
 	fi
+	rm -rfv __pycache__ python/__pycache__
 
 # remove all files produced by `make`
 distclean: clean
