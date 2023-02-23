@@ -81,7 +81,7 @@ or relative amount (percentage), but not both.
 \end{theorem}
 
 \begin{theorem}
-When comaring the result of price increase and decrease by the same relative
+When comparing the result of price increase and decrease by the same relative
 amount --- losses always overweight equivalent gains.
 \end{theorem}
 
@@ -251,11 +251,24 @@ Price deviation defined from other deviation:
   \label{eq:p1_p2_p3_d13}
 \end{align}
 
+If such oscillation continues, \emph{total loss} after a number of repeatative
+iterations could be calculated from the Equation~\ref{eq:total_loss}:
+
+\begin{equation}
+  \boxed{d_{1n} = (1 - d_{13}^2)^n}
+  \label{eq:total_loss}
+\end{equation}
+
+where $d_{1n}$ --- total price deviation from the initial 1
+after $n$ consecutive price oscillations by $d_{13}$ each,
+as defined in the Equation~\ref{eq:p1_p2_p3_d13}.
+
 Practical application for trading is suggested in Conclusions.
 
 \subsection*{Examples}
 
-In the Table~\ref{tab:rel_change} we can see, that price oscillation by the
+In the Table~\ref{tab:rel_change} calculated from
+the Equation~\ref{eq:p1_p2_p3_d13} we can see, that price oscillation by the
 same relative value brings exponentially bigger losses, the bigger is the
 oscillation amplitude.
 
@@ -286,7 +299,7 @@ Figure~\ref{fig:rel_change} demonstrates no difference to the resulting price
 if oscillaiton begins with the price increase or decrease.
 
 As expected, such effect would result in accumulating losses over longer
-period.
+period, as displayed in the Table~\ref{fig:total_loss}.
 
 \begin{figure}[H]  % H = insert picture precisely here
 \centering
@@ -301,7 +314,7 @@ period.
 \subcaptionbox{Oscillation over longer period.}
   {\includegraphics[width=\textwidth]{rel_osc_inc_n150.pdf}}
 \caption{Oscillations of price by 10\% at every iteration.}
-\label{fig:rel_change}
+\label{fig:total_loss}
 \end{figure}
 
 \section*{Conclusions}
@@ -324,9 +337,9 @@ catastrophic losses that recovery from them becomes practically impossible.
 Also, if you had a price change sequence for the same relative amount,
 you would always end up at a loss equal to:
 
-\begin{empheq}[box=\fbox]{align}
-  d_{loss} = -d_{rise}^2 = -d_{fall}^2
-\end{empheq}
+\begin{equation}
+  \boxed{d_{loss} = -d_{rise}^2 = -d_{fall}^2}
+\end{equation}
 
 The loss grows exponentially relative to the oscillation amplitude.
 
@@ -335,6 +348,12 @@ There is no differene if price first rises or falls (see Equation~\ref{eq:p1_p2_
 As a result, after a period of trading with equal relative gains and losses
 you would end up at a growing total loss, the longer the trading period and
 the bigger the price oscillation amplitude.
+
+Total loss after a period of $n$ such oscillations can be calculated as:
+
+\begin{equation}
+  \boxed{d_{total~loss} = (1 - d_{loss}^2)^n}
+\end{equation}
 
 % appendices
 % start from a new page
@@ -345,7 +364,7 @@ All source files for this article available at:
 
 \begin{itemize}
 \item \url{https://github.com/viktorsboroviks/viktorsboroviks.github.io}
-\item tag: v1.0
+\item tag: v1.3
 \end{itemize}
 
 % disable page numbering for the revision history page
@@ -357,6 +376,7 @@ All source files for this article available at:
 
 \begin{versionhistory}
 \vhEntry{1.0}{19 Feb 2023}{VB}{Initial version.}
+\vhEntry{1.1}{23 Feb 2023}{VB}{Minor text corrections; added total loss equation.}
 \end{versionhistory}
 
 \end{onecolumn}
